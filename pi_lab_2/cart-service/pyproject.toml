@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cart-service"
+version = "0.1.0"
+description = ""
+authors = ["Sleenjep <alexanderdryomov7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+pyjwt = "^2.10.1"
+pydantic = "^2.10.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
