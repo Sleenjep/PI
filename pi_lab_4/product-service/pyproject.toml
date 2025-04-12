@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "product-service"
+version = "0.1.0"
+description = ""
+authors = ["Sleenjep <alexanderdryomov7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+pyjwt = "^2.10.1"
+pydantic = "^2.10.6"
+pymongo = "^4.12.0"
+pydantic-settings = "^2.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
