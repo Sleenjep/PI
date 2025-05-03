@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "user-service"
+version = "0.1.0"
+description = ""
+authors = ["Sleenjep <alexanderdryomov7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+pyjwt = "^2.10.1"
+pydantic = "^2.10.6"
+python-multipart = "^0.0.20"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.40"}
+psycopg2-binary = "^2.9.10"
+passlib = "^1.7.4"
+black = "^25.1.0"
+pydantic-settings = "^2.8.1"
+redis = "^6.0.0"
+wrk = "^0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,60 @@
+(user-service-py3.12) alex@alex-Aspire-A715-75G:~/VUZ/PI/pi_lab_5/user-service$ wrk -t1 -c10 -d10s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJxd2UiLCJpYXQiOjE3NDYzMDQwMDksImV4cCI6MTc0NjMwNzYwOX0.SqBsrnotNR9T6EYQa-shnRTt2HtpIL7oJjuHVXvjf0M" http://localhost:8001/users_no_cache/4
+Running 10s test @ http://localhost:8001/users_no_cache/4
+  1 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    64.93ms   15.32ms 133.11ms   78.44%
+    Req/Sec   153.22     34.77   210.00     72.00%
+  1535 requests in 10.01s, 230.35KB read
+Requests/sec:    153.35
+Transfer/sec:     23.01KB
+
+(user-service-py3.12) alex@alex-Aspire-A715-75G:~/VUZ/PI/pi_lab_5/user-service$ wrk -t5 -c10 -d10s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJxd2UiLCJpYXQiOjE3NDYzMDQwMDksImV4cCI6MTc0NjMwNzYwOX0.SqBsrnotNR9T6EYQa-shnRTt2HtpIL7oJjuHVXvjf0M" http://localhost:8001/users_no_cache/4
+Running 10s test @ http://localhost:8001/users_no_cache/4
+  5 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    63.12ms   14.02ms 121.75ms   75.20%
+    Req/Sec    30.88      8.74    46.00     68.45%
+  1546 requests in 10.01s, 232.12KB read
+Requests/sec:    154.40
+Transfer/sec:     23.18KB
+
+(user-service-py3.12) alex@alex-Aspire-A715-75G:~/VUZ/PI/pi_lab_5/user-service$ wrk -t10 -c10 -d10s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJxd2UiLCJpYXQiOjE3NDYzMDQwMDksImV4cCI6MTc0NjMwNzYwOX0.SqBsrnotNR9T6EYQa-shnRTt2HtpIL7oJjuHVXvjf0M" http://localhost:8001/users_no_cache/4
+Running 10s test @ http://localhost:8001/users_no_cache/4
+  10 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    63.59ms   13.21ms 116.24ms   76.10%
+    Req/Sec    15.33      4.70    28.00     67.50%
+  1530 requests in 10.02s, 229.79KB read
+Requests/sec:    152.77
+Transfer/sec:     22.93KB
+
+(user-service-py3.12) alex@alex-Aspire-A715-75G:~/VUZ/PI/pi_lab_5/user-service$ wrk -t1 -c10 -d10s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJxd2UiLCJpYXQiOjE3NDYzMDQwMDksImV4cCI6MTc0NjMwNzYwOX0.SqBsrnotNR9T6EYQa-shnRTt2HtpIL7oJjuHVXvjf0M" http://localhost:8001/users_with_cache/4
+Running 10s test @ http://localhost:8001/users_with_cache/4
+  1 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    39.12ms    8.73ms  85.91ms   88.00%
+    Req/Sec   249.32     52.87   310.00     77.50%
+  2497 requests in 10.00s, 374.51KB read
+Requests/sec:    249.48
+Transfer/sec:     37.45KB
+
+(user-service-py3.12) alex@alex-Aspire-A715-75G:~/VUZ/PI/pi_lab_5/user-service$ wrk -t5 -c10 -d10s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJxd2UiLCJpYXQiOjE3NDYzMDQwMDksImV4cCI6MTc0NjMwNzYwOX0.SqBsrnotNR9T6EYQa-shnRTt2HtpIL7oJjuHVXvjf0M" http://localhost:8001/users_with_cache/4
+Running 10s test @ http://localhost:8001/users_with_cache/4
+  5 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    42.11ms    9.22ms  90.32ms   82.60%
+    Req/Sec    52.80     12.03    81.00     72.25%
+  2648 requests in 10.01s, 396.74KB read
+Requests/sec:    264.57
+Transfer/sec:     39.62KB
+
+(user-service-py3.12) alex@alex-Aspire-A715-75G:~/VUZ/PI/pi_lab_5/user-service$ wrk -t10 -c10 -d10s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJxd2UiLCJpYXQiOjE3NDYzMDQwMDksImV4cCI6MTc0NjMwNzYwOX0.SqBsrnotNR9T6EYQa-shnRTt2HtpIL7oJjuHVXvjf0M" http://localhost:8001/users_with_cache/4
+Running 10s test @ http://localhost:8001/users_with_cache/4
+  10 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    43.21ms    9.51ms  88.47ms   80.90%
+    Req/Sec    27.11      6.90    44.00     70.40%
+  2713 requests in 10.02s, 406.29KB read
+Requests/sec:    270.74
+Transfer/sec:     40.53KB
+
